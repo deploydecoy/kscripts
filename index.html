@@ -110,13 +110,19 @@ http://kscripts.home.blog/ makes use of a scoreboard provided by WeChall to allo
 
 [[BEGIN]]
 
-<<set $useraccount to (0)>>\</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="625,522" size="100,100">Kscripts Scoreboard
+<<set $useraccount to (0)>>\</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="624,522" size="100,100">Kscripts Scoreboard
 
 http://kscripts.home.blog/ makes use of a scoreboard to allow players to easily track their own progress. To make use of this scoreboard for the Kscripts Wargame, you need to follow these steps:
 
-1. Submit the Kscripts flags you earned from the game. 
+1. Submit the Kscripts flags you find. 
 
-2. Recieve points and save progress!
+2. To save: Click &quot;SAVES&quot; and save your progress.
+
+3. To load: Click &quot;SAVES&quot; and select &quot;LOAD&quot;.
+
+4.*WARNING: Deleting cookies deletes saves!
+
+5. HAVE FUN! :)
 
 [[BEGIN]]
 
@@ -156,7 +162,7 @@ http://kscripts.home.blog/ makes use of a scoreboard to allow players to easily 
 	&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/widget&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="2" name="BEGIN" tags="" position="743,524" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
+</tw-passagedata><tw-passagedata pid="2" name="BEGIN" tags="" position="743,523" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
 
 &lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (0), $maxscore to (1100)&gt;&gt;\
 
@@ -174,7 +180,7 @@ FLAG1
     &lt;&lt;button &#39;Submit&#39;&gt;&gt;
         &lt;&lt;set $answer to $answer.trim().toLowerCase().replace(/\s\s+/g, &#39; &#39;)&gt;&gt;
         /% trim() removes leading and trailing whitespace, toLowerCase() convert to lower case, replace turns multiple spaces between words into single spaces.  you may want to omit some or all of these methods. %/
-        &lt;&lt;if $answer is &#39;the answer&#39;&gt;&gt;
+        &lt;&lt;if $answer is &#39;flag1fggvhjjkklkmdfdsee&#39;&gt;&gt;
             &lt;&lt;replace &#39;#textbox-reply&#39;&gt;&gt;\
                 Correct!\
             &lt;&lt;/replace&gt;&gt;
@@ -209,7 +215,7 @@ FLAG2
     &lt;&lt;button &#39;Submit&#39;&gt;&gt;
         &lt;&lt;set $answer to $answer.trim().toLowerCase().replace(/\s\s+/g, &#39; &#39;)&gt;&gt;
         /% trim() removes leading and trailing whitespace, toLowerCase() convert to lower case, replace turns multiple spaces between words into single spaces.  you may want to omit some or all of these methods. %/
-        &lt;&lt;if $answer is &#39;the answer&#39;&gt;&gt;
+        &lt;&lt;if $answer is &#39;flag2kmklmlkkndcdgxfcgc&#39;&gt;&gt;
             &lt;&lt;replace &#39;#textbox-reply&#39;&gt;&gt;\
                 Correct!\
             &lt;&lt;/replace&gt;&gt;
@@ -242,7 +248,7 @@ FLAG3
     &lt;&lt;button &#39;Submit&#39;&gt;&gt;
         &lt;&lt;set $answer to $answer.trim().toLowerCase().replace(/\s\s+/g, &#39; &#39;)&gt;&gt;
         /% trim() removes leading and trailing whitespace, toLowerCase() convert to lower case, replace turns multiple spaces between words into single spaces.  you may want to omit some or all of these methods. %/
-        &lt;&lt;if $answer is &#39;the answer&#39;&gt;&gt;
+        &lt;&lt;if $answer is &#39;flag3yccfccghjhblkljlk$&#39;&gt;&gt;
             &lt;&lt;replace &#39;#textbox-reply&#39;&gt;&gt;\
                 Correct!\
             &lt;&lt;/replace&gt;&gt;
@@ -258,8 +264,7 @@ FLAG3
         &lt;&lt;/if&gt;&gt;
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
-        </tw-passagedata><tw-passagedata pid="7" name="SUBMIT FLAG 3" tags="" position="904,833" size="100,100">
-/% Setup some debuging data to use instead of the actual story variables. %/
+        </tw-passagedata><tw-passagedata pid="7" name="SUBMIT FLAG 3" tags="" position="904,833" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
 
 &lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (300), $maxscore to (1100)&gt;&gt;\
 
@@ -277,7 +282,7 @@ FLAG4
     &lt;&lt;button &#39;Submit&#39;&gt;&gt;
         &lt;&lt;set $answer to $answer.trim().toLowerCase().replace(/\s\s+/g, &#39; &#39;)&gt;&gt;
         /% trim() removes leading and trailing whitespace, toLowerCase() convert to lower case, replace turns multiple spaces between words into single spaces.  you may want to omit some or all of these methods. %/
-        &lt;&lt;if $answer is &#39;the answer&#39;&gt;&gt;
+        &lt;&lt;if $answer is &#39;flag3yccfccghjhblkljlk$&#39;&gt;&gt;
             &lt;&lt;replace &#39;#textbox-reply&#39;&gt;&gt;\
                 Correct!\
             &lt;&lt;/replace&gt;&gt;
