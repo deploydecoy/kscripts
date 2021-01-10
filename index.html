@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="kscripts" startnode="1" creator="Twine" creator-version="2.3.10" ifid="481771FC-04DE-461E-A88C-CC830BFA7549" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="624,524" size="100,100">WeChall Scoreboard
+	<tw-storydata name="kscripts" startnode="1" creator="Twine" creator-version="2.3.10" ifid="481771FC-04DE-461E-A88C-CC830BFA7549" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">WeChall Scoreboard
 
 http://kscripts.home.blog/ makes use of a scoreboard provided by WeChall to allow players to track their own progress and promote healthy competition between ethical hackers. To make use of this scoreboard for the Kscripts Wargame, you need to follow these steps:
 
@@ -109,6 +109,18 @@ http://kscripts.home.blog/ makes use of a scoreboard provided by WeChall to allo
 2. Log in and all of the Kscript flags you submit here will be saved to your account!
 
 [[BEGIN]]
+
+<<set $useraccount to (0)>>\</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="625,522" size="100,100">Kscripts Scoreboard
+
+http://kscripts.home.blog/ makes use of a scoreboard to allow players to easily track their own progress. To make use of this scoreboard for the Kscripts Wargame, you need to follow these steps:
+
+1. Submit the Kscripts flags you earned from the game. 
+
+2. Recieve points and save progress!
+
+[[BEGIN]]
+
+&lt;&lt;set $useraccount to (0)&gt;&gt;\
 
 &lt;&lt;widget &quot;updatescoreboard&quot;&gt;&gt;
 	\&lt;&lt;silently&gt;&gt;
@@ -145,9 +157,11 @@ http://kscripts.home.blog/ makes use of a scoreboard provided by WeChall to allo
 &lt;&lt;/widget&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="2" name="BEGIN" tags="" position="743,524" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (0)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (0), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG1
@@ -177,10 +191,12 @@ FLAG1
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="Final Page" tags="" position="531,689" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="4" name="Link to next passage" tags="" position="557,809" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="SUBMIT FLAG 1" tags="" position="904,530" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (100)&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="3" name="Final Page" tags="" position="531,689" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="4" name="Link to next passage" tags="" position="557,809" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="SUBMIT FLAG 1" tags="" position="905,529" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (100), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG2
@@ -210,11 +226,12 @@ FLAG2
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="6" name="SUBMIT FLAG 2" tags="" position="905,680" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (200)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (200), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
-
 FLAG3
 
 &lt;&lt;set $answer to &#39;&#39;&gt;&gt;\
@@ -243,9 +260,11 @@ FLAG3
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="7" name="SUBMIT FLAG 3" tags="" position="904,833" size="100,100">
 /% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (300)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (300), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG4
@@ -275,9 +294,11 @@ FLAG4
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="8" name="SUBMIT FLAG 4" tags="" position="905,983" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (400)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (400), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG5
@@ -307,9 +328,11 @@ FLAG5
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="9" name="SUBMIT FLAG 5" tags="" position="905,1133" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (500)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (500), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG6
@@ -339,9 +362,11 @@ FLAG6
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="10" name="SUBMIT FLAG 6" tags="" position="905,1283" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (600)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (600), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG7
@@ -371,9 +396,11 @@ FLAG7
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="11" name="SUBMIT FLAG 7" tags="" position="1089,1300" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (700)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (800), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG8
@@ -402,10 +429,12 @@ FLAG8
         &lt;&lt;/if&gt;&gt;
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
-        </tw-passagedata><tw-passagedata pid="12" name="SUBMIT FLAG 8" tags="" position="1252,1299" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (800)&gt;&gt;\
+        </tw-passagedata><tw-passagedata pid="12" name="SUBMIT FLAG 8" tags="" position="1253,1300" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (800), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG9
@@ -435,9 +464,11 @@ FLAG9
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="13" name="SUBMIT FLAG 9" tags="" position="1410,1291" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (900)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (0), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG10
@@ -467,9 +498,11 @@ FLAG10
     &lt;&lt;/button&gt;&gt;\
 &lt;/span&gt;
         </tw-passagedata><tw-passagedata pid="14" name="SUBMIT FLAG 10" tags="" position="1405,1141" size="100,100">/% Setup some debuging data to use instead of the actual story variables. %/
-&lt;&lt;set $playerName to &quot;WeChall Player&quot;, $currentScore to (1000)&gt;&gt;\
+
+&lt;&lt;set $playerName to &quot;Kscripts Player&quot;, $currentScore to (0), $maxscore to (1100)&gt;&gt;\
 
 Player Name: $playerName
+Maximum Points: $maxscore
 Player Score: $currentScore
 
 FLAG11
